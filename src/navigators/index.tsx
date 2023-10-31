@@ -9,16 +9,16 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {Provider} from 'react-redux';
 import {store} from '../store';
-import RootNavigator from './dashboard';
+import Main from './dashboard';
 
-function App(): JSX.Element {
+function RootNavigator(): JSX.Element {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <RootNavigator />
+        <Main />
       </NavigationContainer>
     </Provider>
   );
 }
 
-export default App;
+export default RootNavigator;

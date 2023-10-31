@@ -1,7 +1,8 @@
 export default {
-  primary: '#A32FFF',
+  primary: '#6e0999',
   secondary: '#00A5C6',
   white: '#fff',
   grey: '#808080',
-  black: '#000000',
+  inputBorder: '#ccd',
+  black: '#000',
 };
