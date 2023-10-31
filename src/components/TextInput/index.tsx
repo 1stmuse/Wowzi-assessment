@@ -1,6 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {ReactElement} from 'react';
-import {Text, TextInputProps, View, TextInput, StyleSheet} from 'react-native';
+import {
+  Text,
+  TextInputProps,
+  View,
+  TextInput,
+  StyleSheet,
+  Platform,
+} from 'react-native';
 import colors from '../../utility/colors';
 import {heightPixel, widthPixel} from '../../utility/pxToDpConvert';
 
@@ -44,11 +51,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: colors.inputBorder,
-    paddingVertical: heightPixel(10),
     borderRadius: 8,
     paddingHorizontal: widthPixel(5),
+    paddingVertical: Platform.select({
+      ios: heightPixel(10),
+      android: 0,
+    }),
   },
   input: {
     paddingHorizontal: widthPixel(15),
+    flex: 1,
   },
 });

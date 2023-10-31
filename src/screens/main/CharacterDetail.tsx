@@ -26,6 +26,8 @@ const CharacterDetail: React.FC = ({}) => {
     params: {data},
   } = useRoute<route>();
 
+  console.log(data, 'the data');
+
   const addToFavourite = () => {
     dispatch(addToFavourites(data));
   };

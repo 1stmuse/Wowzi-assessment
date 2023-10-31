@@ -1,8 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
-import {StackNavigationProp} from '@react-navigation/stack';
-import {HomeScreenParam} from '../navigators/dashboard/screens';
 import {AppContainer, CharacterCard} from '../components';
 import {Header} from '../components/header';
 import colors from '../utility/colors';
@@ -10,11 +7,9 @@ import {useSelector} from 'react-redux';
 import {useFavouriteSelector} from '../store/favouriteChar';
 import {fontPixel, widthPixel} from '../utility/pxToDpConvert';
 
-type nav = StackNavigationProp<HomeScreenParam>;
-
 const Favourites: React.FC = ({}) => {
   const {favourites} = useSelector(useFavouriteSelector);
-  console.log(favourites);
+
   return (
     <AppContainer backgroundColor={colors.white}>
       <Header hasBackButton={false} title="Favourites" />

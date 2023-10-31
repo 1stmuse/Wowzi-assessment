@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.inputBorder,
     backgroundColor: '#fff',
+    overflow: 'hidden',
   },
   VerticalContainer: {
     flexDirection: 'row',

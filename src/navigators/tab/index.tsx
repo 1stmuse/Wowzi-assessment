@@ -40,7 +40,7 @@ const BottomTabs: React.FC = () => {
               <MaterialIcons
                 color={focused ? colors.primary : colors.grey}
                 name="flutter-dash"
-                size={30}
+                size={24}
               />
             );
 
@@ -49,7 +49,7 @@ const BottomTabs: React.FC = () => {
               <AntDesign
                 color={focused ? colors.primary : colors.grey}
                 name="heart"
-                size={30}
+                size={24}
               />
             );
         }

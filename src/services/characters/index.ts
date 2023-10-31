@@ -5,8 +5,8 @@ import {Response} from '../../store/interfaces';
 import {baseUrl} from '../../utility/baseUrl';
 import {ICharacter, IMultipleResultsResponse} from '../interfaces';
 
-export const authApi = createApi({
-  reducerPath: 'authApi',
+export const characterApi = createApi({
+  reducerPath: 'characterApi',
   baseQuery: axiosBaseQuery({baseUrl: `${baseUrl}`}),
   endpoints: builder => ({
     getCharaters: builder.query<
@@ -20,4 +20,4 @@ export const authApi = createApi({
     }),
   }),
 });
-export const {useGetCharatersQuery} = authApi;
+export const {useGetCharatersQuery} = characterApi;
