@@ -32,8 +32,6 @@ export const axiosBaseQuery =
       let err = axiosError as AxiosError;
 
       if (err) {
-        // console.log(err.response, 'another errorr');
-
         return {
           error: {data: err.response?.data},
         };
